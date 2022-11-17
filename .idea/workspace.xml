@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95b1c5eb-c3e2-4bf2-8530-1d7d61cb0a7b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excption-udf/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excption-udf/src/main/java/com/timecho/udf/exception/ExceptionBeforeDestroy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excption-udf/src/main/java/com/timecho/udf/exception/ExceptionBeforeStart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excption-udf/src/main/java/com/timecho/udf/exception/ExceptionTerminate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excption-udf/src/main/java/com/timecho/udf/exception/ExceptionTransform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/excption-udf/src/main/java/com/timecho/udf/exception/ExceptionValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/SameNameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/EnumBug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/MySum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/OverStandard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestSessionTimeWindowAccessStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestSlidingSizeWindowAccessStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestSlidingTimeWindowAccessStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestStateWindowAccessStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestStateWindowAccessStrategy2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TwoVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/same-name-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/same-name-test/src/main/java/NotImplementUTDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/same-name-test/src/main/java/SameNameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-http-udf/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-http-udf/src/main/java/org/apache/iotdb/udf/http/TestObjectRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-udf-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/upload-udf-test/src/main/java/com/timecho/udf/upload/TestObjectRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-guide/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-guide/src/main/java/Max.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HFOHChLdvTi6jXWH3SBXDzByji" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.timecho.udf.upload.TestObjectRow" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.timecho.udf.normal" />
+      <recent name="com.timecho.udf.upload" />
+      <recent name="org.apache.iotdb.udf.http" />
+      <recent name="" />
+      <recent name="com.timecho.udf.exception" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95b1c5eb-c3e2-4bf2-8530-1d7d61cb0a7b" name="Changes" comment="" />
+      <created>1667877277623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667877277623</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
