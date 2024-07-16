@@ -33,7 +33,9 @@ public class OverStandard implements UDTF {
     }
     @Override
     public void beforeStart(UDFParameters udfParameters, UDTFConfigurations configurations) throws Exception {
-        LOGGER.info("######## OverStandard # beforeStart #########");
+        LOGGER.info("######## OverStandard # beforeStart {} #########", udfParameters.getAttributes().toString());
+        standard = udfParameters.getInt("standard");
+        round = udfParameters.getFloat("round");
         configurations
                 .setOutputDataType(Type.INT32)
                 .setAccessStrategy(new RowByRowAccessStrategy());
@@ -42,7 +44,8 @@ public class OverStandard implements UDTF {
     public void transform(Row row, PointCollector collector) throws Exception {
         LOGGER.info("######## OverStandard # transform #########");
         if (! row.isNull(0)) {
-            if (Math.abs(row.getInt(0) - standard)/standard > round) {
+            LOGGER.info("{} == {} ", Double.valueOf(Math.abs(row.getInt(0) - standard))/standard, round);
+            if (Double.valueOf(Math.abs(row.getInt(0) - standard))/standard > round) {
                 collector.putInt(row.getTime(), row.getInt(0));
             }
         }

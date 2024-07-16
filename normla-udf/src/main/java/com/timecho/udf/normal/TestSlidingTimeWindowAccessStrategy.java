@@ -53,6 +53,10 @@ public class TestSlidingTimeWindowAccessStrategy implements UDTF {
 
     @Override
     public void transform(RowWindow rowWindow, PointCollector collector) throws Exception {
+        if (rowWindow.windowSize() == 0 ){
+            LOGGER.info("######### TestSlidingTimeWindow # return");
+            return;
+        }
         LOGGER.info("######### TestSlidingTimeWindow # [{}] {} ########", rowWindow.getRow(0).getTime(), rowWindow.windowSize());
         long result = 0;
         for (int i=0; i < rowWindow.windowSize(); i++) {

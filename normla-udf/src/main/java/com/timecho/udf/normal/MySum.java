@@ -22,19 +22,19 @@ public class MySum implements UDTF {
 
     @Override
     public void validate(UDFParameterValidator validator) throws Exception {
-        LOGGER.info("######## validate #########");
+        LOGGER.info("######## MySum validate #########");
         validator.validateInputSeriesDataType(0, Type.INT32, Type.INT64, Type.FLOAT, Type.DOUBLE);
     }
     @Override
     public void beforeStart(UDFParameters udfParameters, UDTFConfigurations configurations) throws Exception {
-        LOGGER.info("######## beforeStart #########");
+        LOGGER.info("######## MySum beforeStart #########");
         configurations
                 .setOutputDataType(Type.DOUBLE)
                 .setAccessStrategy(new RowByRowAccessStrategy());
     }
     @Override
     public void transform(Row row, PointCollector collector) throws Exception {
-        LOGGER.info("######## transform #########"+row.getDataType(0));
+        LOGGER.info("######## MySum transform ######### [{}]", row.getTime());
         if (timestamp == null) {
             timestamp = row.getTime();
         }
@@ -56,12 +56,12 @@ public class MySum implements UDTF {
 
     @Override
     public void terminate(PointCollector collector) throws Exception {
-        LOGGER.info("######## terminate #########");
+        LOGGER.info("######## MySum terminate #########");
         collector.putDouble(timestamp, totalValue);
     }
 
     @Override
     public void beforeDestroy() {
-        LOGGER.info("######## beforeDestroy #########");
+        LOGGER.info("######## MySum beforeDestroy #########");
     }
 }

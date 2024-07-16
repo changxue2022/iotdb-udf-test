@@ -7,7 +7,6 @@ import org.apache.iotdb.udf.api.customizer.config.UDTFConfigurations;
 import org.apache.iotdb.udf.api.customizer.parameter.UDFParameterValidator;
 import org.apache.iotdb.udf.api.customizer.parameter.UDFParameters;
 import org.apache.iotdb.udf.api.customizer.strategy.SessionTimeWindowAccessStrategy;
-import org.apache.iotdb.udf.api.customizer.strategy.SessionTimeWindowAccessStrategy;
 import org.apache.iotdb.udf.api.type.Type;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,6 +49,7 @@ public class TestSessionTimeWindowAccessStrategy implements UDTF {
             }
         }
         collector.putFloat(rowWindow.getRow(0).getTime(), result);
+//        collector.putInt(rowWindow.getRow(0).getTime(), result);
     }
 
     @Override
