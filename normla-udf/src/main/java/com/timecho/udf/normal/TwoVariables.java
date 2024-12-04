@@ -11,6 +11,7 @@ import org.apache.iotdb.udf.api.type.Type;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -27,6 +28,30 @@ public class TwoVariables implements UDTF {
                 .setAccessStrategy(new RowByRowAccessStrategy());
 
     }
+
+    private String getValue(Row row, int index) throws IOException {
+        switch (row.getDataType(index)) {
+            case INT32:
+            case DATE:
+                return String.valueOf(row.getInt(index));
+            case INT64:
+            case TIMESTAMP:
+                return String.valueOf(row.getLong(index));
+            case FLOAT:
+                return String.valueOf(row.getFloat(index));
+            case DOUBLE:
+                return String.valueOf(row.getDouble(index));
+            case BOOLEAN:
+                return String.valueOf(row.getBoolean(index));
+            case TEXT:
+            case STRING:
+            case BLOB:
+                return String.valueOf(row.getBinary(index));
+            default:
+                LOGGER.error("******* Bad data type!********");
+                return null;
+        }
+    }
     @Override
     public void transform(Row row, PointCollector collector) throws Exception {
         if (row.isNull(0) && row.isNull(1)) {
@@ -36,38 +61,9 @@ public class TwoVariables implements UDTF {
             collector.putBoolean(row.getTime(), false);
             return;
         }
-        String var1 = "";
-        String var2 = "";
-        if (Type.INT32.equals(row.getDataType(0))) {
-            var1 = String.valueOf(row.getInt(0));
-        } else if (Type.INT64.equals(row.getDataType(0))) {
-            var1 = String.valueOf(row.getLong(0));
-        } else if (Type.FLOAT.equals(row.getDataType(0))) {
-            var1 = String.valueOf(row.getFloat(0));
-        } else if (Type.DOUBLE.equals(row.getDataType(0))) {
-            var1 = String.valueOf(row.getDouble(0));
-        } else if (Type.BOOLEAN.equals(row.getDataType(0))) {
-            var1 = String.valueOf(row.getBoolean(0));
-        } else if (Type.TEXT.equals(row.getDataType(0))) {
-            var1 = String.valueOf(row.getBinary(0));
-        } else {
-            LOGGER.error("******* Bad data type!********");
-        }
-        if (Type.INT32.equals(row.getDataType(1))) {
-            var2 = String.valueOf(row.getInt(1));
-        } else if (Type.INT64.equals(row.getDataType(1))) {
-            var2 = String.valueOf(row.getLong(1));
-        } else if (Type.FLOAT.equals(row.getDataType(1))) {
-            var2 = String.valueOf(row.getFloat(1));
-        } else if (Type.DOUBLE.equals(row.getDataType(1))) {
-            var2 = String.valueOf(row.getDouble(1));
-        } else if (Type.BOOLEAN.equals(row.getDataType(1))) {
-            var2 = String.valueOf(row.getBoolean(1));
-        } else if (Type.TEXT.equals(row.getDataType(1))) {
-            var2 = String.valueOf(row.getBinary(1));
-        } else {
-            LOGGER.error("******* Bad data type!********");
-        }
+        String var1 = getValue(row, 0);
+        String var2 = getValue(row, 1);
+
         LOGGER.info("##### var1="+var1);
         LOGGER.info("##### var2="+var2);
         collector.putBoolean(row.getTime(), var1.equals(var2));

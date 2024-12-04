@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95b1c5eb-c3e2-4bf2-8530-1d7d61cb0a7b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/MySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/MySum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/OverStandard.java" beforeDir="false" afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/OverStandard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestSessionTimeWindowAccessStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestSessionTimeWindowAccessStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestSlidingTimeWindowAccessStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TestSlidingTimeWindowAccessStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TwoVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/normla-udf/src/main/java/com/timecho/udf/normal/TwoVariables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-guide/src/main/java/Max.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-guide/src/main/java/Max.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
